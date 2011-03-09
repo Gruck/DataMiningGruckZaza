@@ -11,6 +11,12 @@
 \usepackage{graphicx}
 \usepackage[final]{pdfpages} 
 \usepackage{rotating}
+\usepackage{float}
+
+\newcommand{\jeua}{countries2007\_ALL }
+\newcommand{\jeub}{countries2007\_NoMissing1 }
+\newcommand{\jeuc}{countries2007\_NoMissing2 }
+\newcommand{\lesite}{\textit{The world bank}}
 % définir les commandes ici
 
 % s'il y a beaucoup de commandes et de packages à inclure n'h&ésitez pas
@@ -63,8 +69,10 @@
 %remarques sur le jeu en lui même, la décomposition en
 \input{pretraitement.tex}
 %ajout de la classe UE, NON UE.
+
 \input{outliers.tex}
 %liste des outliers et raison pour lesquels on les a éliminés
+
 \input{projections.tex}
 %expliquer comment on a reduit la dimmension,
    % methode
