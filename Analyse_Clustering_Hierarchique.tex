@@ -1,6 +1,7 @@
 \section{Clustering hierachique}
 L'analyse hiérarchique va nous permettre de déterminer le nombre de cluster que nous pouvons envisager. Pour ce faire nous utilisons le composant Hierarchical Clustering de Knime avec comme configuration Linkage type : SINGLE.
-\item Indicateur Santé
+
+\paragraph{Indicateur Santé}
 Nous réalisons le Hierarchical Clustering avec les attributs santé. Cependant nous décidons d'enlever l'attribut population total car c'est une valeur brute, elle fausse le clustering. Nous obtenons le graphe des distances suivant : 
 
 \begin{figure}[H]
@@ -12,7 +13,7 @@ Nous réalisons le Hierarchical Clustering avec les attributs santé. Cependant 
 
 Suite à l'analyse de ce graphe nous décidons de faire 3 Clusters.
 
-\item Politique économique
+\paragraph{Politique économique}
 Nous réalisons la même démarche que précédemment mais avec les attributs de l'indicateur Politique économique. Nous obtenons le graphe de distance suivant : 
 \begin{figure}[H]
 	\begin{center}
