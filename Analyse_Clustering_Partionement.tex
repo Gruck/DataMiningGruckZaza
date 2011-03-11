@@ -45,11 +45,15 @@ Nous obtenons les résultats suivants :
 	\end{center}
 \end{figure}
 
-K-means n'étant pas déterministe, nous devons vérifier sa stabilité.
+K-means n'étant pas déterministe, nous devons vérifier sa stabilité.\\
+Nous effectuons donc plusieurs essais de partitionement avec cet algorithme. Nous voyons de façon très claire que les clusters ne sont pas stables  
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.4]{Image/ScatterPlotSanteKmeansStabiliteNoMissing2}
+		\caption{Evolution des clusters au cours des itérations}
+	\end{center}
+\end{figure}
 
-\begin{Huge} 
-scorer pour k-means 
-\end{Huge}
 
 \paragraph{Analyse}
 Nous pouvons constater avec l'utilisation des deux méthodes de classification que nous avons une différence mais qu'elle n'est pas flagrante. Nous retrouvons les mêmes tendances.\\
@@ -100,18 +104,10 @@ Nous obtenons les résultats suivants :
 	\end{center}
 \end{figure}
 
-K-means n'étant pas déterministe, nous devons vérifier sa stabilité.
-
-\begin{Huge}
-
-
-scorer pour k-means 
-\end{Huge} 
-
+Nous devrions étudier la aussi la stabilité du clustering obtenu par K-means, mais comme dans les section précédente, les clusters obtenus ne sont pas stables.
 
 \paragraph{Analyse}
-De même que précédemment nous remarquons que quelque soit la méthode de classification que nous utilisons nous obtenons les mêmes tendances.\\
-Pour cet indicateur nous obtenons des graphes pas très parlant. Nous remarquons cependant que pour certains graphes le nombre de valeurs sont très larges (GNI per capita et GDP growth par exemple) ce qui met en avant de grande disparité entre les pays. Il aurait peut être était intéressant de se concentrer sur moins de pays pour cet indicateur.
+
 
 
 
