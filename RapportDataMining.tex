@@ -29,8 +29,8 @@
 \begin{center}
  
  \vfill
-		\textbf{Hexanome 4211 :} 
-		Elisa \bsc{Abidh}, Gaël \bsc{Motte}
+		\begin{Large}\textbf{Hexanome 4211 :} 
+		Elisa \bsc{Abidh}, Gaël \bsc{Motte}\end{Large}
 		
 \vfill
 	
@@ -40,12 +40,13 @@
 
 \vfill
 	
-		\begin{Large}
+		 
+		\includegraphics[scale=1]{Image/drapeaux-du-monde}
+\begin{Large}
 		
 		
 		Jeu de données :  \textit{Countries2007}\\
-		\end{Large} 
-
+		\end{Large}
 
 \vfill		
 		\begin{Large}
@@ -65,7 +66,7 @@
 \input{intro.tex}
 
 \part{Découverte du jeux de données et pré-traitement}
-\input{decouverte.tex} 
+\input{decouverte.tex} %DONE
 
 %remarques sur le jeu en lui même, la décomposition en
 \input{pretraitement.tex} %DONE
@@ -78,16 +79,17 @@
    % nouveau nom
    
 \input{outliers.tex}
+%DONE
 %liste des outliers et raison pour lesquels on les a éliminés
 
 
-   
+  \newpage 
 \part{Analyse du jeu de données}
 \input{Anaylse_Axes_de_Recherche.tex}
 
 
 \input{Analyse_Clustering_Hierarchique.tex}
-%montrer les résultats 
+%montrer les résultats  
    % dendrogramme
    % distance
    % conclusion sur le nb de clusters
@@ -97,7 +99,7 @@
    % resultats
 \input{Validation_Modele.tex}
    % cross validation
-
+\newpage
 \part{Projet - UE et ses nouveaux membres en 2007}
 \input{intro_projet.tex}
 % idéee de justification de l'idée
