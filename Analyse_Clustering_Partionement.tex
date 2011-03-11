@@ -1,11 +1,11 @@
-\section{Clustering par partionement}
+\section{Clustering par partitionnement}
 Nous avons réalisé le clustering par partitionnement en mettant en place deux méthodes : hierarchique et non hierarchique. 
 
 \subsection{Santé}
 
 \paragraph{Hierarchique}
 Nous avons utilisé le composant hierarchical Clustering avec la configuration Linkage type : COMPLETE. Pour observer les résultats nous avons utilisé le composant Scatter Matrix.
-Nous avions choisi de faire 3 clusters (cf section précédente), dont la répartitions des pays se fait comme suit : 
+Nous avions choisi de faire 3 clusters (cf section précédente), dont la répartition des pays se fait comme suit : 
 
 \begin{figure}[H]
 	\begin{center}
@@ -58,11 +58,11 @@ Nous effectuons donc plusieurs essais de partitionement avec cet algorithme. Nou
 \paragraph{Analyse}
 Nous pouvons constater avec l'utilisation des deux méthodes de classification que nous avons une différence mais qu'elle n'est pas flagrante. Nous retrouvons les mêmes tendances.\\
 Nous remarquons que nos clusters sont plus ou moins justifiable. En effet dans certain cas nous repérons bien 3 clusters distinct comme avec les attributs : Fertility rate and mortality under 5 et Life expectancy at birth. Mais cependant dans bon nombre de cas nous repérons plutôt un nuage de point très dispersés ou qui pourrait être modélisé comme une droite.\\
-A la vue des représentations on constate que on aurait peut être du ne faire que deux clusters. Pour le moment nous ne pouvons pas conclure. Nous pouvons constater que le cluster vert est bien distinct du cluster bleu et que ces indicateurs de santé montrent de meilleures conditions  sanitaires.\\
-Comme le montre le tableau plus haut nous remarquons que le cluster vert regroupe bon nombre de pays européen alors que le cluster bleu regroupe bon nombre de pays d'Afrique ce qui est un résultat pas cohérent en vue de ce que nous savons de l'état actuel de ces pays.
+A la vue des représentations on constate qu'on aurait peut être du ne faire que deux clusters. Pour le moment nous ne pouvons pas conclure. Nous pouvons constater que le cluster vert est bien distinct du cluster bleu et que ces indicateurs de santé montrent de meilleures conditions  sanitaires.\\
+Comme le montre le tableau plus haut nous remarquons que le cluster vert regroupe bon nombre de pays européen alors que le cluster bleu regroupe bon nombre de pays d'Afrique ce qui est un résultat cohérent en vue de ce que nous savons de l'état actuel de ces pays.
 
 
-\subsection{Économie}
+\subsection{Politique Économique}
 Au vu des distances obtenues dans la section précédente, nous obtenons 4 clusters.
 
 \paragraph{Hierarchique} Par classification hiérarchique, nous obtenons les clusters suivants :
@@ -107,8 +107,8 @@ Nous obtenons les résultats suivants :
 Nous devrions étudier la aussi la stabilité du clustering obtenu par K-means, mais comme dans les section précédente, les clusters obtenus ne sont pas stables.
 
 \paragraph{Analyse}
-De même que précédemment nous remarquons que quelque soit la méthode de classification que nous utilisons nous obtenons les mêmes tendances.\\
-Pour cet indicateur nous obtenons des graphes pas très parlant. Nous remarquons cependant que pour certains graphes le nombre de valeurs sont très larges (GNI per capita et GDP growth par exemple) ce qui met en avant de grande disparité entre les pays. Il aurait peut être était intéressant de se concentrer sur moins de pays pour cet indicateur.\\ test
+De même que précédemment nous remarquons que quelque soit la méthode de classification que nous utilisons, nous obtenons les mêmes tendances.\\
+Pour cet indicateur nous obtenons des graphes pas très parlant. Nous remarquons cependant que pour certains graphes le nombre de valeurs sont très larges (GNI per capita et GDP growth par exemple) ce qui met en avant de grande disparité entre les pays. Il aurait peut être était intéressant de se concentrer sur moins de pays pour cet indicateur.
 
 
 
